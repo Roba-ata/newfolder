@@ -1,0 +1,64 @@
+<html> 
+
+<head>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+   
+  <section>  
+   <div class="bg"></div>
+   <header>
+<a href="#" class="logo">fruits</a>
+<ul class="navigation">  
+    <li >  <a href="#" class="active">Home</a> </li>
+     <li>   <a href="#">Menu</a> </li>
+     <li>  <a href="#">About</a>  </li>
+     <li> <a href="#">Service</a>   </li>
+     <li>  <a href="#">Contact</a>   </li>
+     
+    </ul>
+
+       </header> 
+       <div class="content">
+       <div class="textbox"> 
+         <h2>Eat Fresh Fruits</h2>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis sunt nobis cumque, eaque vel odit est, officiis sint voluptate obcaecati delectus quas porro inventore. Odit eligendi laudantium autem. Necessitatibus, nobis.  </p>
+         <button class="grow_skew_backward">Learn more</button>
+         </div>  
+      <div class="imgBox">
+        <img src="img/3.png" alt="" class="fruits">
+      </div>
+      </div>  
+      <ul class="thumb">
+        <li data-text="1"><img src="img/1.png" alt="" onclick="slider('img/1.png');changeColor('#f37f20')"> </li>
+        <li data-text="2"><img src="img/2.png" alt="" onclick="slider('img/2.png');changeColor('#f3f718')"> </li>
+        <li data-text="3"><img src="img/3.png" alt="" onclick="slider('img/3.png');changeColor('#f34040')"> </li>
+        <li data-text="4"><img src="img/4.png" alt="" onclick="slider('img/4.png');changeColor('#AF1010')"> </li>
+       </ul>
+       <div class="sociallink">
+         <a href="#"><i class="fa fa-facebook"></i> </a>
+         <a href="#"><i class="fa fa-instagram"></i> </a>
+         <a href="#"><i class="fa fa-youtube"></i> </a>
+         <a href="#"><i class="fa fa-twitter"></i> </a>
+       </div>
+
+</section>  
+
+</body>
+
+</html>
+
+<script>
+  function slider (somthing) {
+    document.querySelector('.fruits').src = somthing ;
+  }
+  function changeColor (color) {
+    const bg = document.querySelector('.bg') ;
+    bg.style.background = color ;
+  }
+</script>
+
